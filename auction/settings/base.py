@@ -32,7 +32,7 @@ ALLOWED_HOSTS = (
 
 # Application definition
 
-INSTALLED_APPS = (
+REQUIRED_APPS = (
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -40,6 +40,12 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
 )
+
+PROJECT_APPS = (
+    'people',
+)
+
+INSTALLED_APPS = REQUIRED_APPS + PROJECT_APPS
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
