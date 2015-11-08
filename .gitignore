@@ -32,6 +32,7 @@ dump.rdb
 *.box
 .ropeproject
 .idea
+.ctrlp
 
 test.py
 test_file.html
